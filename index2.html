@@ -6,21 +6,28 @@
     <title>Calculadora 2.0</title>
 </head>
 <body>
-    <button id="num1" value="1" onclick="MostrarNumero()">1</button>
-    <button id="num2" value="2">2</button>
-    <button id="num3" value="3">3</button>
-    <button id="num4" value="4">4</button>
-    <button id="num5" value="5">5</button>
-    <button id="num6" value="6">6</button>
-    <button id="num7" value="7">7</button>
-    <button id="num8" value="8">8</button>
-    <button id="num9" value="9">9</button>
-    <button id="num0" value="0">0</button>
-    <button id="sumar">+</button>
-    <button id="restar">-</button>
-    <button id="multi">*</button>
-    <button id="dividir">/</button>
-    <button id="igual">=</button>
+    <p id="resultado"></p> 
+    <div>
+        <button value="1" onclick="AgregarNumero('1')">1</button>
+        <button value="2" onclick="AgregarNumero('2')">2</button>
+        <button value="3" onclick="AgregarNumero('3')">3</button>
+        <button value="4" onclick="AgregarNumero('4')">4</button>
+        <button value="5" onclick="AgregarNumero('5')">5</button>
+        <button value="6" onclick="AgregarNumero('6')">6</button>
+        <button value="7" onclick="AgregarNumero('7')">7</button>
+        <button value="8" onclick="AgregarNumero('8')">8</button>
+        <button value="9" onclick="AgregarNumero('9')">9</button>
+        <button value="0" onclick="AgregarNumero('0')">0</button>
+    </div>
+    <div>
+        <button onclick="SeleccionarOperacion('sumar')">+</button>
+        <button onclick="SeleccionarOperacion('restar')">-</button>
+        <button onclick="SeleccionarOperacion('multiplicar')">*</button>
+        <button onclick="SeleccionarOperacion('dividir')">/</button>
+        <button onclick="RealizarOperacion()">=</button>
+        <button onclick="MostrarNumero()">Ans</button>
+        <button onclick="BorrarDigito()">DESC</button>
+    </div>
     <script src="javascript2.js"></script>
 </body>
 </html>
